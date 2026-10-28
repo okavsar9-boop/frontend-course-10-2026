@@ -1,0 +1,26 @@
+/* Write your CSS below each TODO. Complete the matching HTML task first. */
+
+/* TODO 1. Border radius
+  Give both div elements a fixed width and height so the 50% shape is easy to compare.
+  Set .rounded-20 to border-radius: 20px.
+  Set .rounded-50 to border-radius: 50%. What shape does each box become?
+*/
+
+/* TODO 2. Box shadow
+  Style .shadow-card with a width, padding, and background color.
+  Add a box shadow using this order:
+  box-shadow: offset-x offset-y blur-radius color;
+  Use an online box-shadow generator for inspiration, then adjust the values.
+  Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+*/
+
+/* TODO 3. Overflow
+  Give the div elements with classes .overflow-box, .overflow-x-box, and
+  .overflow-y-box a fixed width and height. Add enough text to make each div overflow.
+  Set .overflow-visible to overflow: visible.
+  Set .overflow-hidden to overflow: hidden.
+  Set .overflow-scroll to overflow: scroll.
+  Set .overflow-x-box to overflow-x: hidden.
+  Set .overflow-y-box to overflow-y: hidden.
+  Compare what stays visible and whether scrollbars appear.
+*/
