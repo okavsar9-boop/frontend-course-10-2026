@@ -1,0 +1,173 @@
+/* Starter styles: layout only. Do not change these. */
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+input {
+  width: 250px;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/*
+  CSS SELECTOR HOMEWORK / CSS SELECTORLARI UY VAZIFASI
+
+  Step 1: Add the id, class, or type from each HTML comment.
+  1-qadam: Har bir HTML izohidagi id, class yoki type ni qo'shing.
+
+
+
+  Step 2: Write one CSS rule for each task below, under the last line.
+  2-qadam: Quyidagi har bir topshiriq uchun pastdagi qatordan keyin bitta CSS qoida yozing.
+
+  Example / Misol:
+    h1 { color: red; }
+
+  1. p: navy blue (RGB: 0, 0, 128)
+     Barcha paragraflarni navy (to'q ko'k) rangga bo'yang.
+*/
+p {
+  color: rgb(0, 0 128);
+}
+/*
+  2. #main-title: green (RGB: 0, 128, 0)
+     Asosiy sarlavhani yashil rangga bo'yang.
+*/
+#main-title {
+  color: green;
+}
+/*
+  3. #contact-title: blue background (RGB: 0, 0, 255)
+     Contact us sarlavhasining fonini ko'k qiling.
+*/
+#contact-title {
+  background: blue;
+}
+/*
+  4. .highlight: yellow background (RGB: 255, 255, 0)
+     Highlight classli paragrafning fonini sariq qiling.
+*/
+.highlight {
+  background: yellow;
+}
+/*
+  5. .important: bold text (font-weight: bold)
+     Important classli paragraf matnini qalin qiling.
+*/
+.important {
+  font-weight: bold;
+}
+/*
+  6. .card: gray background (RGB: 128, 128, 128)
+     Card classli ikkala blokning fonini kulrang qiling.
+*/
+.card {
+  background: gray;
+}
+/*
+  7. input[type="email"]: light blue background (RGB: 173, 216, 230)
+     Faqat email inputining fonini och ko'k qiling.
+*/
+input {
+  background: lightblue;
+}
+/*
+  8. *: Google Font
+     Google Font linkini qo'shing (videoga qarang), keyin * orqali uni barcha elementlarga qo'llang.
+*/
+* {
+  font-family: "Black Ops One", system-ui;
+  font-style: normal;
+}
+
+/*
+  9. h2, h4: purple (RGB: 128, 0, 128)
+     Barcha h2 va h4 sarlavhalarni binafsha rangga bo'yang.
+*/
+h2,
+h4 {
+  color: purple;
+}
+/*
+  10. .notice h3: red (RGB: 255, 0, 0)
+      Notice classli blok ichidagi h3 sarlavhani qizil qiling.
+*/
+.notice > h3 {
+  color: red;
+}
+/*
+  11. #outer-list > li: light gray background (RGB: 211, 211, 211)
+      Faqat tashqi ro'yxat elementlarining fonini och kulrang qiling. Ichki elementga tegmang.
+*/
+#outer-list > li {
+  background: lightgray;
+}
+/*
+  12. div.special: orange border (RGB: 255, 165, 0)
+      special classli divga to'q sariq (orange) chegara qo'shing.
+*/
+.special {
+  border-color: orange;
+}
+/*
+  13. div.score.special: bold text
+      score va special classli divdagi matnni qalin qiling.
+*/
+.score,
+.special {
+  font-weight: bold;
+}
+/*
+  14. .btn: background color (RGB: 0, 0, 255) and text color white (RGB: 255, 255, 255)
+      Tugmalarning fonini ko'k va matn rangini oq qiling.
+*/
+.btn {
+  background-color: rgb(0, 0, 255);
+  color: white;
+}
+/*
+  15. button[type="submit"]: green background (RGB: 0, 128, 0)
+      Submit tugmasining fonini yashil qiling.
+*/
+button[type="submit"] {
+  background: green;
+}
+/*
+  16. button[type="reset"]: red background (RGB: 255, 0, 0)
+      Cancel tugmasining fonini qizil qiling.
+*/
+
+button[type="reset"] {
+  background: red;
+}
