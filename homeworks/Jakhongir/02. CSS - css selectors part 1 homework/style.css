@@ -99,7 +99,7 @@ p {
   7. input[type="email"]: light blue background (RGB: 173, 216, 230)
      Faqat email inputining fonini och ko'k qiling.
 */
-input {
+input[type="email"] {
   background: lightblue;
 }
 /*

@@ -5,7 +5,25 @@
   Set .rounded-20 to border-radius: 20px.
   Set .rounded-50 to border-radius: 50%. What shape does each box become?
 */
+.rounded-20 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: blue;
+  width: 300px;
+  height: 100px;
+}
 
+.rounded-50 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: red;
+  width: 300px;
+  height: 300px;
+}
 /* TODO 2. Box shadow
   Style .shadow-card with a width, padding, and background color.
   Add a box shadow using this order:
@@ -13,7 +31,14 @@
   Use an online box-shadow generator for inspiration, then adjust the values.
   Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
 */
-
+.shadow-card {
+  width: 300px;
+  padding: 2rem;
+  background-color: blue;
+  box-shadow:
+    3px 3px red,
+    -1em 0 0.4em olive;
+}
 /* TODO 3. Overflow
   Give the div elements with classes .overflow-box, .overflow-x-box, and
   .overflow-y-box a fixed width and height. Add enough text to make each div overflow.
@@ -24,3 +49,42 @@
   Set .overflow-y-box to overflow-y: hidden.
   Compare what stays visible and whether scrollbars appear.
 */
+.overflow-visible {
+  overflow: visible;
+  border-style: dotted;
+  border-color: aqua;
+  width: 300px;
+  height: 100px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+  border-style: dotted;
+  border-color: blueviolet;
+  width: 300px;
+  height: 100px;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+  border-style: dotted;
+  border-color: blue;
+  width: 600px;
+  height: 300px;
+}
+
+.overflow-x-box {
+  overflow-x: hidden;
+  border-style: dotted;
+  border-color: burlywood;
+  width: 600px;
+  height: 300px;
+}
+
+.overflow-y-box {
+  overflow-y: hidden;
+  border-style: dotted;
+  border-color: palegreen;
+  width: 300px;
+  height: 100px;
+}
