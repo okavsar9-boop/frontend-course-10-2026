@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>CSS Selector Homework</title>
+
+   <!-- TODO: Add your Google Font <link> here, as shown in the video.
+       Videoda ko'rsatilgandek Google Font <link> ni shu yerga qo'shing. -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+   <!-- TODO: Add id="main-title" to this h1.
+       Bu h1 ga id="main-title" qo'shing. -->
+   <h1 id="main-title">CSS Selectors Practice</h1>
+   <p>Use the tasks in style.css to practise finding elements.</p>
+
+   <section>
+      <!-- TODO: Add id="contact-title" to this h2.
+         Bu h2 ga id="contact-title" qo'shing. -->
+      <h2 id="contact-title">Contact us</h2>
+
+      <!-- TODO: Add class="highlight" to this paragraph.
+         Bu paragrafga class="highlight" qo'shing. -->
+      <p class="highlight">This paragraph should stand out.</p>
+
+      <!-- TODO: Add class="important" to this paragraph.
+         Bu paragrafga class="important" qo'shing. -->
+      <p class="important">This paragraph is important.</p>
+
+      <!-- TODO: Add class="notice" to this div.
+         Bu divga class="notice" qo'shing. -->
+      <div>
+         <div class="notice">
+            <h3>A heading inside the notice</h3>
+            <p>This paragraph is inside the notice.</p>
+         </div>
+      </div>
+   </section>
+
+   <section>
+      <h2>Second section</h2>
+      <h4>Fill in the form</h4>
+
+      <form>
+         <!-- TODO: Add for="email-input" to this label. Its value must match the email input's id.
+           Bu labelga for="email-input" qo'shing. Uning qiymati email inputining id qiymati bilan bir xil bo'lsin. -->
+         <label for="email-input">Email:</label>
+
+         <!-- TODO: Add type="email", id="email-input", and placeholder="name@example.com" to this input.
+           Bu inputga type="email", id="email-input" va placeholder="name@example.com" qo'shing. -->
+         <input id="email-input" type="email" placeholder="name@example.com" />
+
+         <!-- TODO: Add for="name-input" to this label. Its value must match the name input's id.
+           Bu labelga for="name-input" qo'shing. Uning qiymati ism inputining id qiymati bilan bir xil bo'lsin. -->
+         <label for="name-input">Name:</label>
+
+         <!-- TODO: Add type="text", id="name-input", and placeholder="Your name" to this input.
+           Bu inputga type="text", id="name-input" va placeholder="Your name" qo'shing. -->
+         <input type="text" id="name-input" palceholder="Your name" />
+
+         <!-- TODO: Add type="reset" and class="btn" to this button. Cancel clears the inputs.
+           Bu tugmaga type="reset" va class="btn" qo'shing. Cancel inputlarni tozalaydi. -->
+         <button type="reset" class="btn">Cancel</button>
+
+         <!-- TODO: Add type="submit" and class="btn" to this button.
+           Bu tugmaga type="submit" va class="btn" qo'shing. -->
+         <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <!-- TODO: Add id="outer-list" to this ul.
+         Bu ul ga id="outer-list" qo'shing. -->
+      <ul id="outer-list">
+         <li>Outer list item one</li>
+         <li>
+            Outer list item two
+            <ul>
+               <li>Nested list item</li>
+            </ul>
+         </li>
+      </ul>
+   </section>
+
+   <!-- TODO: Add class="card" to both divs below.
+       Quyidagi ikkala divga ham class="card" qo'shing. -->
+   <div class="card">
+      <p>Card one</p>
+   </div>
+   <div class="" card>
+      <p>Card two</p>
+   </div>
+
+   <!-- TODO: Add class="special" to this div.
+       Bu divga class="special" qo'shing. -->
+   <div class="special">
+      <p>This is a special box.</p>
+   </div>
+
+   <!-- TODO: Add class="score special" to this div.
+       Bu divga class="score special" qo'shing. -->
+   <div class="score">
+      <p>Score: 10 points</p>
+   </div>
+</body>
+
+</html>
