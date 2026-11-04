@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position Answers / CSS position javoblari</title>
+    <link rel="stylesheet" href="position-answers.css" />
+  </head>
+  <body id="top">
+    <header class="page-header">
+      <h1>CSS Position: Example Answers / CSS position: namunaviy javoblar</h1>
+      <p>Completed examples for each task. / Har bir topshiriq uchun tayyor namunalar.</p>
+    </header>
+
+    <main>
+      <section class="task">
+        <h2>Task 1: Static is the default / 1-topshiriq: Static — standart holat</h2>
+        <div class="demo static-demo">
+          <div class="box">First / Birinchi</div><div class="box">Second / Ikkinchi</div><div class="box">Third / Uchinchi</div>
+        </div>
+      </section>
+
+      <section class="task">
+        <h2>Task 2: Top does not move a static item / 2-topshiriq: Top static elementni siljitmaydi</h2>
+        <div class="demo static-top-demo">
+          <div class="box">Before / Oldin</div><div class="box try-top">top: 30px / top: 30px</div><div class="box">After / Keyin</div>
+        </div>
+      </section>
+
+      <section class="task">
+        <h2>Task 3: Move an item with relative / 3-topshiriq: Elementni relative bilan suring</h2>
+        <div class="demo relative-top-demo">
+          <div class="box">Normal / Oddiy</div><div class="box moved-down">Moved / Siljidi</div><div class="box">Normal / Oddiy</div>
+        </div>
+      </section>
+
+      <section class="task">
+        <h2>Task 4: Move an item from the left / 4-topshiriq: Elementni chapdan suring</h2>
+        <div class="demo relative-left-demo">
+          <div class="box">Before / Oldin</div><div class="box moved-right">Moved / Siljidi</div><div class="box">After / Keyin</div>
+        </div>
+      </section>
+
+      <section class="task">
+        <h2>Task 5: Keep the original space / 5-topshiriq: Asl joyni saqlang</h2>
+        <div class="demo relative-space-demo">
+          <div class="box">One / Bir</div><div class="box relative-space">Two / Ikki</div><div class="box">Three / Uch</div>
+        </div>
+      </section>
+
+      <section class="task">
+        <h2>Task 6: Use bottom and right / 6-topshiriq: Bottom va right dan foydalaning</h2>
+        <div class="demo relative-corner-demo"><div class="box corner-move">Moved / Siljidi</div></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 7: Put one relative item above another / 7-topshiriq: Relative elementni boshqasining ustiga chiqaring</h2>
+        <div class="demo relative-stack-demo">
+          <div class="box stack-back">Back / Orqa</div><div class="box stack-front">Front / Old</div>
+        </div>
+      </section>
+
+      <section class="task">
+        <h2>Task 8: Add a z-index / 8-topshiriq: z-index qo‘shing</h2>
+        <div class="demo z-index-demo">
+          <div class="box layer-one">Layer 1 / 1-qavat</div><div class="box layer-two">Layer 2 / 2-qavat</div><div class="box layer-three">Layer 3 / 3-qavat</div>
+        </div>
+      </section>
+
+      <section class="task">
+        <h2>Task 9: Make the parent a positioning reference / 9-topshiriq: Ota elementni joylashuv uchun asos qiling</h2>
+        <div class="demo parent-demo"><span class="absolute-child">Inside parent / Ota ichida</span><span class="parent-text">Parent box / Ota blok</span></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 10: Place an item in the top-left corner / 10-topshiriq: Elementni yuqori chap burchakka joylashtiring</h2>
+        <div class="demo corner-parent"><span class="corner-label">Top left / Yuqori chap</span><span>Parent / Ota element</span></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 11: Place a label in the bottom-right corner / 11-topshiriq: Yorliqni pastki o‘ng burchakka joylashtiring</h2>
+        <article class="demo card-parent"><h3>My card / Mening kartam</h3><span class="card-label">NEW / YANGI</span></article>
+      </section>
+
+      <section class="task">
+        <h2>Task 12: Put a badge on an icon / 12-topshiriq: Belgini ikonka ustiga qo‘ying</h2>
+        <div class="demo badge-parent"><div class="mail-icon">✉</div><span class="badge">3</span></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 13: Cover a parent with an overlay / 13-topshiriq: Ota elementni qatlam bilan yoping</h2>
+        <div class="demo overlay-parent"><span>Content / Kontent</span><div class="overlay">Overlay / Qoplama</div></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 14: Center a child inside its parent / 14-topshiriq: Bolani ota element markaziga qo‘ying</h2>
+        <div class="demo center-parent"><div class="center-child">Center / Markaz</div></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 15: Position a child inside a nested parent / 15-topshiriq: Bolani ichki ota elementda joylashtiring</h2>
+        <div class="demo outer-parent"><span>Outer parent / Tashqi ota</span><div class="inner-parent"><span>Inner parent / Ichki ota</span><span class="inner-child">Child / Bola</span></div></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 16: Use the nearest positioned ancestor / 16-topshiriq: Eng yaqin joylashtirilgan ajdoddan foydalaning</h2>
+        <div class="demo nearest-outer"><span>Outer / Tashqi</span><div class="nearest-inner"><span>Positioned parent / Joylashtirilgan ota</span><span class="nearest-child">Absolute child / Absolute bola</span></div></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 17: Layer two positioned cards / 17-topshiriq: Joylashtirilgan ikki kartani qatlamlang</h2>
+        <div class="demo card-stack"><div class="box card-back">Behind / Orqada</div><div class="box card-front">In front / Oldinda</div></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 18: Fixed note from page load / 18-topshiriq: Sahifa yuklangandayoq qotirilgan eslatma</h2>
+        <div class="demo fixed-parent"><span>This parent scrolls with the page. / Bu ota element sahifa bilan birga siljiydi.</span><span class="fixed-note">Fixed note / Qotirilgan eslatma</span></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 19: Make a fixed back-to-top button / 19-topshiriq: Yuqoriga qaytish tugmasini qotiring</h2>
+        <div class="demo fixed-button-parent"><a class="fixed-button" href="#top">Top / Yuqori</a><span>Scroll the page / Sahifani aylantiring</span></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 20: Make a fixed notice bar / 20-topshiriq: E’lon panelini qotiring</h2>
+        <div class="demo fixed-bar-parent"><div class="fixed-bar">This bar stays on screen / Bu panel ekranda qotib turadi</div><span>Scroll the page to compare / Taqqoslash uchun sahifani aylantiring</span></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 21: Keep a heading sticky while scrolling / 21-topshiriq: Sarlavhani aylantirganda yopishqoq qiling</h2>
+        <div class="demo scroll-box sticky-heading-demo">
+          <div class="sticky-heading">Sticky heading / Yopishqoq sarlavha</div>
+          <p>Scroll inside this box. / Shu blok ichida aylantiring.</p><p>Line two / Ikkinchi qator</p><p>Line three / Uchinchi qator</p><p>Line four / To‘rtinchi qator</p><p>Line five / Beshinchi qator</p><p>Line six / Oltinchi qator</p>
+        </div>
+      </section>
+
+      <section class="task">
+        <h2>Task 22: Make a sticky menu / 22-topshiriq: Menyuni yopishqoq qiling</h2>
+        <div class="demo scroll-box sticky-menu-demo">
+          <nav class="sticky-menu"><a href="#">One / Bir</a><a href="#">Two / Ikki</a><a href="#">Three / Uch</a></nav>
+          <p>Scroll to keep the menu at the top. / Menyu tepada turishi uchun aylantiring.</p><p>More content / Qo‘shimcha kontent</p><p>More content / Qo‘shimcha kontent</p><p>More content / Qo‘shimcha kontent</p><p>More content / Qo‘shimcha kontent</p>
+        </div>
+      </section>
+
+      <section class="task">
+        <h2>Task 23: Make a sticky sidebar / 23-topshiriq: Yon panelni yopishqoq qiling</h2>
+        <div class="demo split-scroll"><aside class="sticky-sidebar">Sticky sidebar / Yopishqoq yon panel</aside><div class="long-content"><p>Content section one / Birinchi kontent</p><p>Content section two / Ikkinchi kontent</p><p>Content section three / Uchinchi kontent</p><p>Content section four / To‘rtinchi kontent</p><p>Content section five / Beshinchi kontent</p><p>Content section six / Oltinchi kontent</p></div></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 24: Add a sticky label to a tall section / 24-topshiriq: Baland bo‘limga yopishqoq yorliq qo‘shing</h2>
+        <div class="demo tall-section"><span class="sticky-label">Chapter 1 / 1-bob</span><p>Read the section and scroll. / Bo‘limni o‘qing va aylantiring.</p><p>More text / Qo‘shimcha matn</p><p>More text / Qo‘shimcha matn</p><p>More text / Qo‘shimcha matn</p><p>More text / Qo‘shimcha matn</p></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 25: Build a product card with a corner label / 25-topshiriq: Burchak yorlig‘i bor mahsulot kartasini yarating</h2>
+        <article class="demo product-card"><div class="product-image">Product image / Mahsulot rasmi</div><span class="sale-label">SALE / CHEGIRMA</span><h3>Everyday backpack / Kundalik ryukzak</h3><strong>$24</strong></article>
+      </section>
+
+      <section class="task">
+        <h2>Task 26: Build a notification stack / 26-topshiriq: Bildirishnomalar qatlamini yarating</h2>
+        <div class="demo notification-demo"><div class="notification">Message received / Xabar keldi</div><div class="notification notification-back">2 new updates / 2 ta yangi yangilanish</div><span class="notification-count">2</span></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 27: Build a profile photo with an online badge / 27-topshiriq: Onlayn belgisi bor profil rasmi yarating</h2>
+        <div class="demo avatar-parent"><div class="avatar">A</div><span class="online-dot"></span></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 28: Position markers on a simple map / 28-topshiriq: Oddiy xaritada belgilarni joylashtiring</h2>
+        <div class="demo map-parent"><span class="map-pin pin-one">A</span><span class="map-pin pin-two">B</span><span class="map-pin pin-three">C</span></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 29: Build a layered photo card / 29-topshiriq: Qatlamli rasm kartasini yarating</h2>
+        <div class="demo photo-card"><span class="photo-title">A quiet morning / Sokin tong</span><span class="photo-tag">TRAVEL / SAYOHAT</span></div>
+      </section>
+
+      <section class="task">
+        <h2>Task 30: Final challenge — build a positioned notice card / 30-topshiriq: Yakuniy loyiha — joylashtirilgan e’lon kartasini yarating</h2>
+        <article class="demo final-card"><span class="final-badge">NEW / YANGI</span><h3>Weekend workshop / Dam olish kungi mashg‘ulot</h3><p>Learn CSS by making a small project. / Kichik loyiha yaratib CSS ni o‘rganing.</p><span class="final-date">Saturday / Shanba</span></article>
+      </section>
+    </main>
+  </body>
+</html>
