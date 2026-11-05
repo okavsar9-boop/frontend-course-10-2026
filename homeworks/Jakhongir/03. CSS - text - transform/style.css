@@ -1,0 +1,260 @@
+/* Starter styles: layout only. Do not change these. */
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+/*
+    CSS TEXT, LISTS AND LINKS HOMEWORK
+    CSS MATN, RO'YXATLAR VA HAVOLALAR UY VAZIFASI
+
+    Step 1: Complete the HTML TODOs: add IDs, classes and the Google Fonts link.
+    1-qadam: HTML dagi TODO larni bajaring: id, class va Google Fonts linkini qo'shing.
+
+    Step 2: Write your CSS below each matching TODO comment in this file.
+    2-qadam: Bu fayldagi har bir TODO izohining tagiga mos CSS kodini yozing.
+
+    Step 3: Open selector-homework.html in your browser and check your work.
+    3-qadam: selector-homework.html ni brauzerda ochib, natijani tekshiring.
+
+    Use separate text-decoration properties for tasks 6-10.
+    6-10-topshiriqlarda text-decoration xususiyatlarini alohida yozing.
+
+    Note: thickness uses values such as 2px, not colors. Black is a color.
+    Eslatma: thickness uchun rang emas, 2px kabi qiymat yoziladi. Black - rang.
+*/
+
+/* Write your CSS below this line / CSS ni shu qatordan pastga yozing */
+
+/* TODO 1. *: Use the Google Font "Nunito", with sans-serif as the fallback.
+        * orqali barcha elementlarga "Nunito" shriftini bering, zaxira shrift sans-serif bo'lsin.
+
+        Copy this example BELOW this comment, not inside it:
+        Bu misolni izoh ichiga emas, izohdan KEYIN yozing:
+
+        * {
+            font-family: "Nunito", sans-serif;
+        }
+
+        The browser tries fonts from left to right. If Nunito is unavailable,
+        it uses an available sans-serif font on the device instead.
+        Brauzer shriftlarni chapdan o'ngga tekshiradi. Nunito mavjud bo'lmasa,
+        qurilmadagi mavjud sans-serif shriftidan foydalanadi.
+
+        Use a comma between choices. Quote font names, but do NOT quote
+        the generic fallback keywords sans-serif and serif.
+        Variantlarni vergul bilan ajrating. Shrift nomini qo'shtirnoqda yozing,
+        lekin sans-serif va serif umumiy kalit so'zlarini qo'shtirnoqsiz yozing.
+        sans-serif = without decorative strokes; serif = with decorative strokes.
+        sans-serif = harf uchlarida bezaksiz; serif = harf uchlarida bezakli. */
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+/* TODO 2. #main-title: Use "Lora" with a serif fallback, font-size: 36px,
+    and text-align: center. Use a different font from the rest of the page.
+    Asosiy sarlavhaga "Lora", zaxira uchun serif, 36px o'lcham va markaziy tekislash bering.
+        Uning shrifti sahifaning qolgan qismidan farq qilsin.
+
+        First add id="main-title" to the h1 in HTML. Then copy this rule
+        BELOW this comment. The ID selector overrides * for this heading.
+        Avval HTML dagi h1 ga id="main-title" qo'shing. Keyin bu qoidani izohdan
+        KEYIN yozing. ID selektori bu sarlavha uchun * qoidasidan ustun turadi.
+
+        #main-title {
+            font-family: "Lora", serif;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        If Lora cannot load, the browser uses an available serif font.
+        Lora yuklanmasa, brauzer mavjud serif shriftidan foydalanadi.
+        Save both files and refresh the browser to see the result.
+        Natijani ko'rish uchun ikkala faylni saqlang va brauzerni yangilang. */
+#main-title {
+  font-family: "Lora", serif;
+  font-size: 36px;
+  text-align: center;
+}
+
+/* TODO 3. .uppercase: Transform the text to uppercase using text-transform.
+    Matndagi barcha harflarni katta harflarga aylantiring. */
+.uppercase {
+  text-transform: uppercase;
+}
+/* TODO 4. .lowercase: Transform the text to lowercase using text-transform.
+    Matndagi barcha harflarni kichik harflarga aylantiring. */
+.lowercase {
+  text-transform: lowercase;
+}
+/* TODO 5. .capitalize: Use text-transform: capitalize.
+    Har bir so'zning birinchi harfini katta harf qiling. */
+.capitalize {
+  text-transform: capitalize;
+}
+/* TODO 6. .solid-underline: Set text-decoration-line to underline,
+    text-decoration-color to red, text-decoration-style to solid,
+    and text-decoration-thickness to 2px.
+    Matn tagiga qizil, oddiy (solid), 2px qalinlikdagi chiziq qo'ying. */
+.solid-underline {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+}
+/* TODO 7. .double-overline: Use text-decoration-line: overline
+    and text-decoration-style: double.
+    Matn tepasiga qo'sh chiziq qo'ying. */
+.double-overline {
+  text-decoration-line: overline;
+  text-decoration-color: red;
+  text-decoration-style: solid;
+  text-decoration-style: double;
+}
+
+/* TODO 8. .dotted-strike: Use text-decoration-line: line-through
+    and text-decoration-style: dotted.
+    Matn o'rtasidan nuqtali chiziq o'tkazing. */
+.dotted-strike {
+  text-decoration-line: line-through;
+  text-decoration-color: red;
+  text-decoration-style: solid;
+  text-decoration-style: dotted;
+  
+}
+
+/* TODO 9. .dashed-underline: Use text-decoration-line: underline
+    and text-decoration-style: dashed.
+    Matn tagiga uzuq chiziq qo'ying. */
+.dashed-underline {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: solid;
+  text-decoration-style: dashed;
+}
+/* TODO 10. .wavy-underline: Use an underline, color black,
+    style wavy, and thickness 3px with separate text-decoration properties.
+    Matn tagiga qora, to'lqinli, 3px qalinlikdagi chiziq qo'ying. */
+.wavy-underline {
+  text-decoration-line: underline;
+  text-decoration-color: black;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 3px;
+}
+/* TODO 11. .large-text: Set font-size to 24px.
+    Matn o'lchamini 24px qiling. */
+.large-text {
+  font-size: 24px;
+}
+/* TODO 12. .weight-demo: Set font-weight to bold on the parent div.
+    Ota div uchun font-weight: bold yozing. */
+.weight-demo {
+  font-weight: bold;
+}
+/* TODO 13. .normal-text: Set font-weight to normal.
+    Matn qalinligini normal qiling. */
+.normal-text {
+  font-weight: normal;
+}
+/* TODO 14. .lighter-text: Set font-weight to lighter.
+    Lighter is relative to the parent, so complete task 12 first.
+    Matn qalinligini lighter qiling. U ota elementga bog'liq, avval 12-topshiriqni bajaring. */
+.lighter-text {
+  font-weight: lighter;
+}
+/* TODO 15. .bold-text: Set font-weight to bold.
+    Matnni qalin qiling. */
+.bolt-text {
+  font-weight: bold;
+}
+/* TODO 16. .italic-text: Set font-style to italic.
+    Matnni kursiv qiling. */
+.italic-text {
+  font-style: italic;
+}
+/* TODO 17. .centered-text: Set text-align to center.
+    Matnni markazga tekislang. */
+.centered-text {
+  text-align: center;
+}
+/* TODO 18. #square-list: Use the shorthand list-style: square inside.
+    List-style yordamida kvadrat belgi qo'ying va belgini ichkariga joylashtiring. */
+#square-list {
+  list-style: square;
+}
+/* TODO 19. #circle-list: Use list-style-type: circle
+    and list-style-position: outside as separate properties.
+    Alohida xususiyatlar bilan aylana belgi qo'ying va belgini tashqariga joylashtiring.
+    Compare the wrapped text with the inside list above; resize the browser if needed.
+    Matnning yangi qatorini inside ro'yxat bilan solishtiring; kerak bo'lsa oynani toraytiring. */
+#circle-list {
+  list-style-type: circle;
+}
+/* TODO 20. #image-list: Set list-style-image using url() and this image:
+    https://www.w3schools.com/css/sqpurple.gif
+    Also set list-style-type: square as a fallback if the image does not load.
+    List-style-image va url() bilan yuqoridagi rasmni ro'yxat belgisi qiling.
+    Rasm yuklanmasa, zaxira uchun list-style-type: square yozing.
+    The image requires internet access. Rasm uchun internet kerak. */
+#image-list {
+  list-style-image: url(https://www.w3schools.com/css/sqpurple.gif);
+  list-style-type: square;
+}
+/* TODO 21. .practice-link: Set color to blue and text-decoration-line to underline.
+    Ikkala havolani ko'k rangga bo'yang va tagiga chiziq qo'ying. */
+.practice-link {
+  color: blue;
+  text-decoration-line: underline;
+}
+
+/* TODO 22. .practice-link:visited: Set color to purple.
+    Open a link, then return to this page to check its visited color.
+    Tashrif buyurilgan havolani binafsha rangga bo'yang.
+    Tekshirish uchun havolani oching, keyin bu sahifaga qayting. */
+.practice-link:visited {
+  color: purple;
+}
+/* TODO 23. .practice-link:hover: Set color to red and text-decoration-style to wavy.
+    Write this rule AFTER the visited rule so hover wins when both states apply.
+    Kursor havola ustida turganda rangini qizil, chizig'ini to'lqinli qiling.
+    Ikkala holat birga ishlaganda hover ustun bo'lishi uchun bu qoidani visited dan KEYIN yozing. */
+.practice-link:hover {
+  color: red;
+  text-decoration-style: wavy;
+}
+/* TODO 24. .action-button: Set cursor to pointer.
+    Move the cursor over the button to check. No click action is needed.
+    Tugma uchun cursor: pointer yozing. Kursorni tugma ustiga olib borib tekshiring.
+    Tugmaga bosilganda biror amal bajarilishi shart emas. */
+.action-button {
+  cursor: pointer;
+}
+/* TODO 25. .faded-note: Set opacity to 0.5.
+    Compare it with the fully visible paragraph above it.
+    Paragrafga opacity: 0.5 bering va yuqoridagi oddiy paragraf bilan solishtiring. */
+.faded-note {
+  opacity: 0.5;
+}
