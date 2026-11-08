@@ -120,49 +120,34 @@ button {
     and text-decoration-thickness to 2px.
     Matn tagiga qizil, oddiy (solid), 2px qalinlikdagi chiziq qo'ying. */
 .solid-underline {
-  text-decoration-line: underline;
-  text-decoration-color: red;
-  text-decoration-style: solid;
-  text-decoration-thickness: 2px;
+  text-decoration: underline solid red 2px;
 }
 /* TODO 7. .double-overline: Use text-decoration-line: overline
     and text-decoration-style: double.
     Matn tepasiga qo'sh chiziq qo'ying. */
 .double-overline {
-  text-decoration-line: overline;
-  text-decoration-color: red;
-  text-decoration-style: solid;
-  text-decoration-style: double;
+  text-decoration: overline double red;
 }
 
 /* TODO 8. .dotted-strike: Use text-decoration-line: line-through
     and text-decoration-style: dotted.
     Matn o'rtasidan nuqtali chiziq o'tkazing. */
 .dotted-strike {
-  text-decoration-line: line-through;
-  text-decoration-color: red;
-  text-decoration-style: solid;
-  text-decoration-style: dotted;
-  
+  text-decoration: line-through dotted red;
 }
 
 /* TODO 9. .dashed-underline: Use text-decoration-line: underline
     and text-decoration-style: dashed.
     Matn tagiga uzuq chiziq qo'ying. */
 .dashed-underline {
-  text-decoration-line: underline;
-  text-decoration-color: red;
-  text-decoration-style: solid;
-  text-decoration-style: dashed;
+  text-decoration: underline dashed red;
 }
 /* TODO 10. .wavy-underline: Use an underline, color black,
     style wavy, and thickness 3px with separate text-decoration properties.
     Matn tagiga qora, to'lqinli, 3px qalinlikdagi chiziq qo'ying. */
 .wavy-underline {
-  text-decoration-line: underline;
-  text-decoration-color: black;
-  text-decoration-style: wavy;
-  text-decoration-thickness: 3px;
+  text-decoration: underline wavy black 3px;
+
 }
 /* TODO 11. .large-text: Set font-size to 24px.
     Matn o'lchamini 24px qiling. */
