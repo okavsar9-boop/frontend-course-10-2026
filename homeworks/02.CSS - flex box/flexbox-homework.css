@@ -52,12 +52,25 @@ main {
 /* Task 1: Make .basic-demo a flex container.
    1-topshiriq: .basic-demo ni flex konteynerga aylantiring. */
 
+.basic-demo {
+  display: flex;
+  gap: 5px;
+}
+
 /* Task 2: Make .justify-demo a flex container and use justify-content to space the items evenly.
    2-topshiriq: .justify-demo ni flex konteynerga aylantiring va elementlarni teng taqsimlash uchun justify-content dan foydalaning. */
 
+.justify-demo {
+  display: flex;
+  justify-content: space-evenly;
+}
 /* Task 3: Make .align-demo a flex container, set its height, and center its items vertically.
    3-topshiriq: .align-demo ni flex konteynerga aylantiring, balandligini belgilang va elementlarini vertikal markazga tekislang. */
 .align-demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   height: 150px;
 }
 
@@ -72,12 +85,24 @@ main {
 /* Task 4: Make .direction-demo a flex container and set its direction to column.
    4-topshiriq: .direction-demo ni flex konteynerga aylantiring va yo‘nalishini column qiling. */
 
+.direction-demo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 /* Task 5: Make .gap-demo a flex container and add a gap between its items.
    5-topshiriq: .gap-demo ni flex konteynerga aylantiring va elementlari orasiga gap qo‘shing. */
 
+.gap-demo {
+  display: flex;
+  justify-content: space-between;
+}
 /* Task 6: Make .wrap-demo a flex container and allow its items to wrap onto another line.
    6-topshiriq: .wrap-demo ni flex konteynerga aylantiring va elementlarning keyingi qatorga o‘tishiga ruxsat bering. */
 .wrap-demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
   max-width: 500px;
 }
 
@@ -87,25 +112,62 @@ main {
 
 /* Task 7: Let items in .grow-demo grow; make .featured grow twice as much as the others.
    7-topshiriq: .grow-demo elementlarini o‘stiring; .featured boshqalaridan ikki baravar ko‘proq o‘ssin. */
-.grow-demo .item {
-  flex-basis: 0;
+.grow-demo {
+  display: flex;
+  gap: 5px;
 }
 
+.grow-demo .item {
+  flex-grow: 1;
+}
+
+.grow-demo .featured {
+  flex-grow: 2;
+  background: red;
+}
 /* Task 8: Set the items' flex-basis to 140px and .wide to 240px.
    8-topshiriq: Elementlarning flex-basis qiymatini 140px, .wide elementiniki esa 240px qiling. */
+
+.basis-demo .item {
+  flex-basis: 140px;
+}
+.basis-demo .wide {
+  flex-basis: 240px;
+}
 .basis-demo {
+  display: flex;
+  gap: 5px;
   max-width: 600px;
 }
 
 /* Task 9: Center items in .self-demo, then align .self-start to the top and .self-end to the bottom.
    9-topshiriq: .self-demo elementlarini markazga tekislang, so‘ng .self-start ni tepaga va .self-end ni pastga joylashtiring. */
+
 .self-demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   height: 150px;
 }
 
+.self-start {
+  align-self: start;
+}
+
+.self-end {
+  align-self: end;
+}
 /* Task 10: Use flexbox, gap, and wrapping to arrange the cards in a responsive row.
    10-topshiriq: Kartalarni moslashuvchan qatorda joylashtirish uchun flexbox, gap va wrapping dan foydalaning. */
+.card-demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .card {
+  flex: 1 1 180px;
   padding: 18px;
   background: #fff;
   border: 1px solid #dce3eb;
@@ -121,6 +183,9 @@ main {
    11-topshiriq: Logotipni chapga, havolalarni o‘ngga joylashtirib, vertikal markazga tekislang.
    Havolalarni bir qatorda joylashtirish uchun .nav-links ga ham flexbox qo‘llang. */
 .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: #fff;
 }
 
@@ -133,6 +198,11 @@ main {
   font-weight: bold;
 }
 
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 /* Task 12: Put the sidebar beside the main area and let the main area take the remaining space.
    Allow the items to wrap if the container becomes too narrow.
    12-topshiriq: Yon panelni asosiy qism yoniga qo‘ying va asosiy qism qolgan joyni egallasin.
@@ -148,6 +218,21 @@ main {
   color: #245c98;
 }
 
+.page-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sidebar {
+  display: flex;
+  flex: 0 0 180px;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1 1 300px;
+}
 /* Task 13: Make .justify-practice a column flex container with a gap.
    Make each .justify-choice a row flex container. Make .sample-items flex containers
    and apply flex-start, center, flex-end, and space-evenly to the matching rows.
@@ -163,15 +248,53 @@ main {
   min-width: 48px;
 }
 
+.justify-practice {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.justify-choice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sample-items {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
 /* Task 14: Make .stretch-demo a flex container, set its height, and stretch its items.
    14-topshiriq: .stretch-demo ni flex konteyner qiling, balandligini belgilang va elementlarini cho‘zing. */
 .stretch-demo {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
   height: 150px;
 }
 
 /* Task 15: Make .align-content-demo wrap; use align-content to distribute its rows vertically.
    15-topshiriq: .align-content-demo elementlarini qatorlarga o‘tkazing; qatorlarni vertikal taqsimlash uchun align-content dan foydalaning. */
 .align-content-demo {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+
   gap: 8px;
   height: 220px;
   max-width: 460px;
@@ -184,24 +307,50 @@ main {
 /* Task 16: Give .shrink-demo a narrow width. Prevent .keep-size from shrinking.
    16-topshiriq: .shrink-demo ga tor kenglik bering. .keep-size elementining siqilishiga yo‘l qo‘ymang. */
 .shrink-demo {
+  display: flex;
+  gap: 10px;
   max-width: 470px;
 }
 
 .shrink-demo .item {
   flex-basis: 210px;
 }
-
+.shrink-demo .keep-size {
+  flex-basis: 110px;
+  flex-shrink: 0;
+  background: red;
+}
 /* Task 17: Make .shorthand-demo a flex container; give items a flex shorthand value.
    Make .grows-more take twice as much extra space.
    17-topshiriq: .shorthand-demo ni flex konteyner qiling va elementlarga flex qisqa yozuvini bering.
    .grows-more qo‘shimcha joydan ikki baravar ko‘p egallasin. */
 
+.shorthand-demo {
+  display: flex;
+  gap: 10px;
+}
+
+.shorthand-demo > .item {
+  flex-grow: 1;
+}
+.shorthand-demo > .grows-more {
+  flex-grow: 2;
+  background: red;
+}
 /* Task 18: Make .reverse-demo a flex container and reverse its row direction.
    18-topshiriq: .reverse-demo ni flex konteyner qiling va qator yo‘nalishini teskariga o‘zgartiring. */
 
+.reverse-demo {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
 /* Task 19: Make .two-gap-demo wrap and set different row and column gaps.
    19-topshiriq: .two-gap-demo elementlarini keyingi qatorga o‘tkazing va qator hamda ustun bo‘shliqlarini alohida belgilang. */
 .two-gap-demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   max-width: 500px;
 }
 
@@ -212,14 +361,27 @@ main {
 /* Task 20: Make .auto-margin-demo a flex container; use auto margin to push Profile right.
    20-topshiriq: .auto-margin-demo ni flex konteyner qiling; Profile ni o‘ngga surish uchun auto margin dan foydalaning. */
 
+.auto-margin-demo {
+  display: flex;
+  gap: 10px;
+}
+.auto-margin-demo > .push-right {
+  margin-left: auto;
+  background: red;
+}
 /* Task 21: Arrange the avatar, profile text, and button in a row.
    Use nested flexbox for the tags and align the row contents neatly.
    21-topshiriq: Avatar, profil matni va tugmani bir qatorda joylashtiring.
    Teglarni ichma-ich flexbox bilan joylashtiring va qator elementlarini tekislang. */
 .profile-demo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   background: #fff;
 }
-
+.profile-copy {
+  flex: 1;
+}
 .avatar {
   display: grid;
   width: 64px;
@@ -258,10 +420,16 @@ main {
    22-topshiriq: .aligned-cards elementlarini qatorlarga o‘tkazing. Har bir .action-card ga
    moslashuvchan o‘lcham bering va ustun flex konteyner qiling. Tugmani auto margin bilan pastga suring. */
 .aligned-cards {
-  gap: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 10px;
 }
 
 .action-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 180px;
   padding: 16px;
   background: #fff;
   border: 1px solid #dce3eb;
@@ -272,9 +440,16 @@ main {
   margin-top: 0;
 }
 
+.action-card button {
+  align-self: flex-start;
+  margin-top: auto;
+}
 /* Task 23: Center .center-message horizontally and vertically inside .center-demo.
    23-topshiriq: .center-demo ichida .center-message ni gorizontal va vertikal markazga joylashtiring. */
 .center-demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 220px;
 }
 
@@ -287,6 +462,9 @@ main {
 /* Task 24: Align the logo and links in a row. Let the navigation items wrap when needed.
    24-topshiriq: Logotip va havolalarni bir qatorda tekislang. Kerak bo‘lsa, navigatsiya elementlarini keyingi qatorga o‘tkazing. */
 .responsive-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: #fff;
 }
 
@@ -296,12 +474,17 @@ main {
 }
 
 .responsive-links {
+  display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
 /* Task 25: Make .gallery-demo a wrapping flex container and let the tiles share available space.
    25-topshiriq: .gallery-demo ni qatorlarga o‘tuvchi flex konteyner qiling va kataklar mavjud joyni bo‘lishsin. */
 .gallery-demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   background: #fff;
 }
 
@@ -312,20 +495,37 @@ main {
   color: #fff;
   border-radius: 6px;
   font-weight: bold;
+  flex: 1 1 170px;
 }
 
-.tile-one { background: #36769a; }
-.tile-two { background: #327c91; }
-.tile-three { background: #4c805b; }
-.tile-four { background: #b8793d; }
-.tile-five { background: #725b9a; }
-.tile-six { background: #9b5967; }
+.tile-one {
+  background: #36769a;
+}
+.tile-two {
+  background: #327c91;
+}
+.tile-three {
+  background: #4c805b;
+}
+.tile-four {
+  background: #b8793d;
+}
+.tile-five {
+  background: #725b9a;
+}
+.tile-six {
+  background: #9b5967;
+}
 
 /* Task 26: Arrange the label, input, and button with flexbox.
    Let the input grow and wrap the form controls on narrow screens.
    26-topshiriq: Yorliq, input va tugmani flexbox yordamida joylashtiring.
    Input kengaysin va tor ekranda forma elementlari keyingi qatorga o‘tsin. */
 .search-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
   background: #fff;
 }
 
@@ -334,6 +534,7 @@ main {
 }
 
 .search-form input {
+  flex: 1 1 200px;
   min-width: 180px;
   padding: 10px;
   border: 1px solid #9aa8b8;
@@ -343,10 +544,17 @@ main {
 /* Task 27: Make the pricing cards wrap and grow evenly. Use nested flexbox to keep links at the bottom.
    27-topshiriq: Narx kartalarini qatorlarga o‘tkazing va teng kengaytiring. Havolalarni pastda ushlash uchun ichma-ich flexbox ishlating. */
 .pricing-demo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 10px;
   background: #fff;
 }
 
 .price-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 180px;
   padding: 18px;
   background: #f7f9fc;
   border: 1px solid #dce3eb;
@@ -379,6 +587,9 @@ main {
 /* Task 28: Build the app layout with a header, sidebar, and flexible content area.
    28-topshiriq: Sarlavha, yon panel va moslashuvchan asosiy qismdan ilova maketini yarating. */
 .app-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   background: #fff;
 }
 
@@ -390,6 +601,10 @@ main {
 }
 
 .app-sidebar {
+  display: flex;
+  flex: 0 1 180px;
+  flex-direction: column;
+  gap: 12px;
   background: #e7eef8;
 }
 
@@ -404,31 +619,46 @@ main {
   border-radius: 6px;
 }
 
+.app-header {
+  display: flex;
+  flex: 0 0 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.app-content {
+  flex: 1;
+}
+
+.app-widgets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.app-widgets > div {
+  flex: 1 1 140px;
+  padding: 16px;
+  background: #eef2f7;
+  border-radius: 6px;
+}
 /* Task 29: Build a full landing page with nested flexbox for its header, hero, and footer.
    Use flex-wrap where needed.
    29-topshiriq: Ichma-ich flexbox yordamida sarlavha, asosiy banner va pastki qismdan iborat sahifa yarating.
    Kerakli joylarda flex-wrap dan foydalaning. */
 .landing-page {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   background: #fff;
   border: 1px solid #dce3eb;
-}
-
-.landing-header,
-.hero,
-.landing-footer {
-  padding: 20px;
 }
 
 .landing-header a,
 .landing-footer a {
   color: #245c98;
   text-decoration: none;
-}
-
-.landing-links,
-.landing-footer > div {
-  gap: 16px;
 }
 
 .join-link,
@@ -440,10 +670,16 @@ main {
 }
 
 .hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
   background: #eaf3fb;
 }
 
 .hero-copy {
+  flex: 1 1 260px;
   max-width: 410px;
 }
 
@@ -467,6 +703,8 @@ main {
 }
 
 .hero-art {
+  display: flex;
+  flex: 1 1 260px;
   min-height: 190px;
   align-items: center;
   justify-content: center;
@@ -484,5 +722,32 @@ main {
 }
 
 .landing-footer {
+  flex-wrap: wrap;
   border-top: 1px solid #dce3eb;
+}
+
+.landing-header,
+.landing-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.landing-links,
+.landing-footer > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.landing-header {
+  flex-wrap: wrap;
+}
+
+.justify-choice {
+  flex-wrap: wrap;
+}
+
+.profile-demo {
+  flex-wrap: wrap;
 }
