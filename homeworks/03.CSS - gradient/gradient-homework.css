@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  color: #202a35;
+  background: #f3f6fa;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.page-header,
+main {
+  width: min(100%, 800px);
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.task {
+  margin-bottom: 24px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #dce3eb;
+  border-radius: 10px;
+}
+
+.task h2 {
+  margin-top: 0;
+}
+
+.demo {
+  display: grid;
+  min-height: 180px;
+  place-items: center;
+  color: #202a35;
+  border: 1px solid #dce3eb;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Task 1: Add a 45-degree linear gradient from cyan (60%) to yellow.
+   1-topshiriq: Cyan (60%) rangidan sariq rangga 45 darajali chiziqli gradient qo‘shing. */
+
+/* Task 2: Add a circular radial gradient positioned at the bottom, from red to white.
+   2-topshiriq: Pastda joylashgan doira shaklidagi radial gradient qo‘shing: qizildan oq rangga. */
+
+/* Task 3: Add a conic gradient with red and orange.
+   3-topshiriq: Qizil va to‘q sariq ranglardan konus gradient qo‘shing. */
+
+/* Task 4: Use repeating-linear-gradient() to make repeating colored stripes.
+   4-topshiriq: Takrorlanuvchi rangli chiziqlar yaratish uchun repeating-linear-gradient() dan foydalaning. */
+
+/* Task 5: Use the background shorthand to add a gradient to this box.
+   5-topshiriq: Bu blokka gradient qo‘shish uchun background qisqa yozuvidan foydalaning. */
