@@ -145,10 +145,10 @@ button {
 /* TODO 10. .wavy-underline: Use an underline, color black,
     style wavy, and thickness 3px with separate text-decoration properties.
     Matn tagiga qora, to'lqinli, 3px qalinlikdagi chiziq qo'ying. */
-.wavy-underline {
-  text-decoration: underline wavy black 3px;
+    .wavy-underline {
+      text-decoration: underline wavy black 3px;
 
-}
+    }
 /* TODO 11. .large-text: Set font-size to 24px.
     Matn o'lchamini 24px qiling. */
 .large-text {
